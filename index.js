@@ -27,9 +27,13 @@ class Triangle extends Polygon {
   
 class Square extends Polygon {
   get isValid() {
-    if(this.array.reduce((a, b) => a === b)) {
+    if(this.array[0] === this.array[1] && this.array[0] === this.array[2] && this.array[2] === this.array[3]) {
       return true
     }
     return false
+  }
+  
+  get area() {
+    return this.array[0] * this.array[1]
   }
 }
