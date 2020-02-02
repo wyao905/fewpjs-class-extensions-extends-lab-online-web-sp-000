@@ -24,3 +24,12 @@ class Triangle extends Polygon {
     return false
   }
 }
+  
+class Square extends Polygon {
+  get isValid() {
+    if(this.array.reduce((a, b) => a === b)) {
+      return true
+    }
+    return false
+  }
+}
