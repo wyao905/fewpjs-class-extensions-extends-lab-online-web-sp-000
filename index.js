@@ -10,6 +10,10 @@ class Polygon {
   }
   
   get perimeter() {
-    return this.array.reduce()
+    return this.array.reduce((acc, value) => acc + value, 0)
   }
+}
+
+class Triangle extends Polygon {
+  
 }
